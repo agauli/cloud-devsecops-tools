@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# This script builds a Docker image and publishes it to a given repository in the AWS ECR service
+set -e
 ECR_URL_BASE=109653375423.dkr.ecr.eu-west-1.amazonaws.com
 SERVICE_NAME=aws-compliance
 REGION=eu-west-1
