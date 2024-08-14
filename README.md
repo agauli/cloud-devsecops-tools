@@ -1,1 +1,1 @@
-Quick
+Shortcut keys
