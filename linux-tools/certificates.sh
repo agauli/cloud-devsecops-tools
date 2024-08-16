@@ -50,7 +50,7 @@ function generateCerts ()
 {
 	APP_NAME=$1
 	ENV_NAME=$2
-	openssl req -new -newkey rsa:2048 -sha256 -keyout $1.$2.agauli.com.key.pem -subj "/CN=$1.$2.agauli.com" -config $1.$2.cnf -passout pass:ap_aws -out  $1.$2.agauli.com.csr
-	openssl rsa -in $1.$2.agauli.com.key.pem -out $1.$2.agauli.com.key-without-pass.pem -passin pass:ap_aws
+	openssl req -new -newkey rsa:2048 -sha256 -keyout $1.$2.agauli.com.key.pem -subj "/CN=$1.$2.agauli.com" -config $1.$2.cnf -passout pass:ag_aws -out  $1.$2.agauli.com.csr
+	openssl rsa -in $1.$2.agauli.com.key.pem -out $1.$2.agauli.com.key-without-pass.pem -passin pass:ag_aws
 }
 
